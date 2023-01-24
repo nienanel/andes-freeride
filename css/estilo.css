@@ -3,35 +3,39 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Bevan', cursive;
-font-family: 'Source Code Pro', monospace;
+h1 {
+    font-family: 'Bungee Shade', cursive;
 }
+
 
 h2 {
     color: white;
     font-weight: bold;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    grid-area: h2;
 }
 
-.main2 {
-    background-color: black;
+h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
 }
+
+
+
 
 /****header***/
 
 .logo {
-    color: crimson;
+    color: rgb(10, 10, 10);
     grid-area: logo;
-    font-size: 25px;
+    font-size: 2rem;
     text-align: start;
-    text-shadow: 0 3px #F7B426;
-
 }
 
 header {
     display: grid;
     grid-column: 1fr 1.5fr 0.5fr;
-    background: linear-gradient(to right,white, #e4cfcd);
     background-color: white;
     width: 100%;
     grid-template-areas: "logo nav whatsapp";
@@ -43,6 +47,7 @@ nav ul li {
     grid-area: nav;
     font-size: 25px;
     color: rgb(12, 11, 11);
+    font-family: 'Bungee Shade', cursive;
 
 
 }
@@ -62,6 +67,7 @@ button {
     background: none;
     color: black;
     border: none;
+    font-family: 'Bungee Shade', cursive;
 
 
 }
@@ -87,18 +93,19 @@ button {
 }
 
 .dropdown-content a {
+    font-family: 'Gloria Hallelujah', cursive;
     display: block;
-    color: rgb(8, 8, 8);
+    color: black;
     padding: 5px;
     text-decoration: none;
     font-size: 20px;
-    background: linear-gradient(to right,white, #ebccc9);
+    background: none;
 
 }
 
 .dropdown-content a:hover {
     color: gold;
-    
+
 }
 
 .whatsapp a {
@@ -110,11 +117,24 @@ button {
 
 /*********************main********************/
 
+main {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 10% 40% 40%;
+    grid-template-areas: "h2 .""intro certif";
+    align-items: center;
+    row-gap: 2rem;
+}
+
 .animate__bounceIn {
     animation-timing-function: ease-in;
     animation-delay: 1s;
-    grid-area: h2-main;
+    
+
 }
+
 /***video****/
 
 video {
@@ -127,11 +147,31 @@ video {
     min-height: 100%;
 }
 
+.intro {
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas: ". h1-main .";
+    grid-area: intro;
+    border: 2px solid white;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 1px 2px gold;
+    border-radius: 10px;
+    height: 25rem; width: 20rem;
+    margin-left: 8rem;
+    
 
+}
+
+.certif {
+    grid-area: certif;
+    border: 2px solid white;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 1px 2px gold;
+    border-radius: 10px;
+    height: 24rem; width: 20rem;
+}
+
+.fotos {
+    grid-area: fotos;
+    
 }
