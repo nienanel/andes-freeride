@@ -21,6 +21,12 @@ h3 {
     font-weight: bold;
 }
 
+h6 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1rem;
+    color: white;
+}
+
 
 
 
@@ -48,8 +54,6 @@ nav ul li {
     font-size: 25px;
     color: rgb(12, 11, 11);
     font-family: 'Bungee Shade', cursive;
-
-
 }
 
 ul li :hover {
@@ -59,7 +63,6 @@ ul li :hover {
 nav a {
     color: rgb(8, 8, 8);
     text-decoration: none;
-
 }
 
 button {
@@ -68,8 +71,6 @@ button {
     color: black;
     border: none;
     font-family: 'Bungee Shade', cursive;
-
-
 }
 
 /***menu desplegable***/
@@ -100,18 +101,15 @@ button {
     text-decoration: none;
     font-size: 20px;
     background: none;
-
 }
 
 .dropdown-content a:hover {
     color: gold;
-
 }
 
 .whatsapp a {
     grid-area: whatsapp;
     text-decoration: none;
-
 }
 
 
@@ -120,19 +118,13 @@ button {
 main {
     margin-top: 3rem;
     margin-left: 2rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row: 10% 40% 40%;
-    grid-template-areas: "h2 .""intro certif";
-    align-items: center;
-    row-gap: 2rem;
+
+    
 }
 
 .animate__bounceIn {
     animation-timing-function: ease-in;
     animation-delay: 1s;
-    
-
 }
 
 /***video****/
@@ -155,9 +147,10 @@ video {
     background-color: white;
     box-shadow: 5px 5px 1px 2px gold;
     border-radius: 10px;
-    height: 25rem; width: 20rem;
+    height: 25rem;
+    width: 20rem;
     margin-left: 8rem;
-    
+
 
 }
 
@@ -168,10 +161,47 @@ video {
     background-color: white;
     box-shadow: 5px 5px 1px 2px gold;
     border-radius: 10px;
-    height: 24rem; width: 20rem;
+    height: 24rem;
+    width: 20rem;
 }
 
 .fotos {
     grid-area: fotos;
-    
+}
+
+.prono {
+    grid-area: prono;
+}
+
+
+/*******footer**********/
+
+footer {
+    display: grid;
+    background-color: black;
+    grid-row: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "legales . redes";margin-top: 2rem;
+
+}
+.redes a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+   
+}
+
+.redes {
+    grid-area: redes; 
+    text-align: center;
+    margin-top: 1rem;
+}
+.legales {
+    grid-area: legales;
+    margin-left: 1rem;
+    justify-content: right;
+    border: 1px solid gold;
+    text-align: center;
+   
+
 }
