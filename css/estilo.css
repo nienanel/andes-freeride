@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.header2 {
+    background-color: red;
+}
+
 h1 {
     font-family: 'Bungee Shade', cursive;
 }
@@ -25,6 +29,12 @@ h3 {
 
 h6 {
     font-size: medium;
+}
+
+p {
+    font-size: 1em;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 /****header***/
@@ -119,16 +129,17 @@ button {
 
 /*********************main********************/
 
-main {
+.main-index {
     margin-top: 3rem;
     margin-left: 2rem;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 2fr 0, 5fr 2fr 1fr;
-    grid-template-areas: "boxes boxes" "fotos fotos" " animacion prono" "footer footer";
-
-
+    grid-template-areas: "boxes boxes" "fotos fotos" " prono animacion" "footer footer";
 }
+
+
+/***************home***********************/
 
 .animate__bounceIn {
     animation-timing-function: ease-in;
@@ -243,3 +254,8 @@ footer {
     font-weight: bold;
     font-size: 1rem;
 }
+
+
+/*****************************nosotros********************************/
+
+
